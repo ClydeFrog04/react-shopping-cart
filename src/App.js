@@ -16,12 +16,12 @@ function App() {
 
     //shopping cart persisting on refresh now :] <3
     useEffect(() =>{
-        //set initial cart base on localStoreage here
+        //set initial cart base on localStorage here
         setCart(JSON.parse(localStorage.getItem("shoppingCart")));
     },[]);
 
     useEffect(() =>{
-        //set local storeage here
+        //set local storage here
         localStorage.setItem("shoppingCart", JSON.stringify(cart));
     },[cart]);
 
